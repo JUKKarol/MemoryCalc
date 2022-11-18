@@ -1,0 +1,45 @@
+﻿<Window x:Class="MemoryCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryCalc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="0.833"/>
+                <GradientStop Color="#FF020202" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="textBoxEnter" HorizontalAlignment="Center" Margin="0,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBoxEnter_TextChanged"/>
+        <Label Content="Wielkość danej:" HorizontalAlignment="Left" Margin="243,227,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonBitUnit" Content="b" HorizontalAlignment="Left" Margin="299,288,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonBitUnit_Click"/>
+        <Button x:Name="buttonByteUnit" Content="B" HorizontalAlignment="Left" Margin="333,288,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonByteUnit_Click"/>
+        <Button x:Name="buttonKiloByteUnit" Content="KB" HorizontalAlignment="Left" Margin="365,288,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonKiloByteUnit_Click"/>
+        <Button x:Name="buttonMegaByteUnit" Content="MB" HorizontalAlignment="Left" Margin="399,288,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonMegaByteUnit_Click"/>
+        <Button x:Name="buttonGigaByteUnit" Content="GB" HorizontalAlignment="Left" Margin="434,288,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonGigaByteUnit_Click"/>
+        <Button x:Name="buttonTeraByteUnit" Content="TB" HorizontalAlignment="Left" Margin="468,288,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonTerraByteUnit_Click"/>
+        <Label Content="Typ danej:&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="230,282,0,0" VerticalAlignment="Top" Height="32"/>
+        <Button x:Name="buttonBitFUnit" Content="b" HorizontalAlignment="Left" Margin="299,320,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonBitFUnit_Click"/>
+        <Button x:Name="buttonByteFUnit" Content="B" HorizontalAlignment="Left" Margin="333,320,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonByteFUnit_Click"/>
+        <Button x:Name="buttonKiloByteFUnit" Content="KB" HorizontalAlignment="Left" Margin="365,320,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonKiloByteFUnit_Click"/>
+        <Button x:Name="buttonMegaByteFUnit" Content="MB" HorizontalAlignment="Left" Margin="399,320,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonMegaByteFUnit_Click"/>
+        <Button x:Name="buttonGigaByteFUnit" Content="GB" HorizontalAlignment="Left" Margin="434,320,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonGigaByteFUnit_Click"/>
+        <Button x:Name="buttonTeraByteFUnit" Content="TB" HorizontalAlignment="Left" Margin="468,320,0,0" VerticalAlignment="Top" Background="#FF080202" Height="21" Width="21" Foreground="White" Click="buttonTeraByteFUnit_Click"/>
+        <Label Content="Docelowy typ danej:" HorizontalAlignment="Left" Margin="177,314,0,0" VerticalAlignment="Top" Height="32"/>
+        <Button x:Name="buttonCount" Content="Policz" HorizontalAlignment="Left" Margin="532,288,0,0" VerticalAlignment="Top" Height="53" Width="98" Click="buttonCount_Click" Background="#FF62FF0C"/>
+        <Label x:Name="labelResultR" Content="" HorizontalAlignment="Left" Margin="522,114,0,0" VerticalAlignment="Top" Height="30" Width="157" Background="#FF24AB1F" BorderBrush="Black"/>
+        <Label x:Name="arrow" Content="" HorizontalAlignment="Left" Margin="356,102,0,0" VerticalAlignment="Top" Height="54" Width="106" BorderBrush="Black">
+            <Label.Background>
+                <ImageBrush Opacity="1" ImageSource="/arrow.png"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="labelResultL" Content="" HorizontalAlignment="Left" Margin="136,114,0,0" VerticalAlignment="Top" Height="30" Width="157" Background="#FF24AB1F" BorderBrush="Black"/>
+        <Label x:Name="labelActive1" Content="" HorizontalAlignment="Left" Margin="494,288,0,0" VerticalAlignment="Top" Background="#FF0E9E31" Height="21" Width="27" FontSize="10" Foreground="White"/>
+        <Label x:Name="labelActive2" Content="" HorizontalAlignment="Left" Margin="494,320,0,0" VerticalAlignment="Top" Background="#FF0E9E31" Height="21" Width="27" Foreground="White" FontSize="10"/>
+
+    </Grid>
+</Window>
